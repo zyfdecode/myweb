@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的时评</title>
+  <title>自动播放我的视频</title>
   <style>
     body {
       font-family: "Microsoft YaHei", sans-serif;
@@ -22,14 +22,19 @@
       border-radius: 8px;
     }
   </style>
-  <title>自动播放我的时评</title>
 </head>
 <body>
-  <h1>欢迎收听/收看我的时评</h1>
+  <h1>欢迎收听/收看我的视频</h1>
   <video controls autoplay muted playsinline>
-    <source src="11.mp4" type="video/mp4">
+    <!-- 修改视频路径，确保在GitHub Pages上能正确访问 -->
+    <source src="./11.mp4" type="video/mp4">
     您的浏览器不支持视频播放。
   </video>
   <p>点击播放按钮开始观看。</p>
+  
+  <!-- 添加GitHub Pages部署提示 -->
+  <div style="margin-top: 20px; color: #666; font-size: 14px;">
+    <p>注意：在GitHub Pages上部署时，请确保视频文件与HTML文件在同一目录下</p>
+  </div>
 </body>
 </html>
